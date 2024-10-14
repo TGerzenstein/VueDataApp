@@ -10,16 +10,18 @@ interface Props {
 defineProps<Props>();
 </script>
 
+
 <template>
-  <section>
+  <div>
     <ul class="flex flex-wrap">
       <li
         class="w-64 max-w-sm rounded border overflow-hidden shadow-lg m-2"
         v-for="(product, index) in products" :key="index"
       >
-        <p>Agregué index: {{ index }}</p>
+        <p>{{ index + 1 }}</p>
+        
         <ProductDescription :product="product" :key="index"/>
       </li>
     </ul>
-  </section>
+  </div>
 </template>
