@@ -19,6 +19,7 @@ defineProps<Props>();
         v-for="(product, index) in products" :key="index"
       >
         <p>{{ index + 1 }}</p>
+        <p>text</p>
         
         <ProductDescription :product="product" :key="index"/>
       </li>
